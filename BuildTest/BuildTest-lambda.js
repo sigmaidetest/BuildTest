@@ -9,9 +9,11 @@ exports.handler = function (event, context, callback) {
 		TopicArn: 'arn:aws:sns:us-east-1:480964559519:udith_test'
 	}).promise()
 		.then(data => {
+			console.log(data);
 			// your code goes here
 		})
 		.catch(err => {
+			console.error(err);
 			// error handling goes here
 		});
 
